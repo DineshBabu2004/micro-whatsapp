@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Route</title>
+</head>
+<body>
+    <h2>Edit Your Message</h2>
+    <form  method="post" action="/display/<%=chatInfo._id %>/update?_method=PATCH">
+    
+    From: <br>
+    <input type="text" name="from" id="from" placeholder= "<%= chatInfo.from %>"> <br>
+    Msg: <br>
+    <textarea name="msg" id="" cols="30" rows="10"><%= chatInfo.msg %></textarea> <br>
+    To: <br>
+    <input type="text" name="to" id="to" placeholder= "<%= chatInfo.to %>"> <br>
+    <br>
+    <button> Submit</button>
+    </form>
+</body>
+</html>
+
